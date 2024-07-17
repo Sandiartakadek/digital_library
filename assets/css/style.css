@@ -1,0 +1,118 @@
+/* Custom styles */
+:root {
+  --primary-color: #4C51BF; /* Primary color: Blue */
+  --secondary-color: #F97316; /* Secondary color: Orange */
+  --neutral-bg: #F9FAFB; /* Neutral background color */
+  --text-color: #374151; /* Main text color */
+  --accent-color: #6B7280; /* Accent color */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--neutral-bg);
+  color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  z-index: 50;
+}
+
+.nav-text a {
+  color: #FFFFFF;
+}
+
+
+.login-text a {
+    color: #000000;
+}
+
+.login-text a:hover {
+  background-color: #3E4E97;
+  color: #FFFFFF;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--neutral-bg);
+  color: var(--text-color);
+}
+
+.slideshow {
+position: relative;
+height: 62vh;
+overflow: hidden;
+}
+
+.slideshow-image {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.slideshow-image.active {
+opacity: 1;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #E5E7EB; /* Slightly darker neutral color */
+  color: var(--text-color);
+}
+
+/* Additional Sections */
+.additional-sections {
+  background-color: var(--neutral-bg);
+  color: var(--text-color);
+}
+
+/* Hover effects for Feature and Additional Sections */
+.features-section .flow-root:hover {
+transform: translateY(-5px);
+transition: transform 0.3s ease;
+}
+
+.features-section .flow-root:hover {
+background-color: #EDF2F7; /* Light gray background on hover */
+}
+
+.features-section .flow-root:hover h3,
+.features-section .flow-root:hover p {
+color: #4A5568; /* Dark gray text on hover */
+}
+
+.additional-sections .flow-root:hover {
+transform: translateY(-5px);
+transition: transform 0.3s ease;
+}
+
+.additional-sections .flow-root:hover {
+background-color: #F7FAFC; /* Light blue background on hover */
+}
+
+.additional-sections .flow-root:hover h3,
+.additional-sections .flow-root:hover p {
+color: #2D3748; /* Dark blue text on hover */
+}
+
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+.footer a {
+  color: #FFFFFF;
+}
+
+.footer a:hover {
+  background-color: #3E4E97; /* Darker shade of primary color */
+}
